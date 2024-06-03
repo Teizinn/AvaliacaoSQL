@@ -1,0 +1,22 @@
+-- Projetos da instituição UFN
+SELECT * FROM Projeto WHERE instituicao_id = 10;
+
+-- Professores sem projetos submetidos
+SELECT * FROM Professor WHERE id NOT IN (SELECT DISTINCT responsavel_professor_id FROM Projeto);
+
+-- Projetos enviados pelo professor Alexandre Zamberlan
+SELECT * FROM Projeto WHERE responsavel_professor_id = 1;
+
+-- Quantidade de projetos submetidos
+SELECT COUNT(*) AS total_projetos FROM Projeto;
+
+-- Projetos sem colaboradores
+SELECT * FROM Projeto WHERE colaborador_id IS NULL;
+
+-- Projetos vinculados à área de Tecnologia
+SELECT * FROM Projeto p JOIN Professor prof ON p.responsavel_professor_id = prof.id WHERE prof.area_atuacao = 'Tecnologia';
+
+-- Projetos vinculados a cada curso
+SELECT c.nome AS curso, p.* FROM Projeto p 
+JOIN Professor prof ON p.responsavel_professor_id = prof.id 
+JOIN Curso c ON prof.curso_id = c.id;
