@@ -1,0 +1,25 @@
+Avaliação SQL 
+
+Matéria: Projeto de Banco de Dados 
+
+Professor: Alexandre Zamberlan 
+
+Aluno: Bruno Difante e Gabriel Teixeira 
+
+ 
+
+1)Qual o papel do SQL em SGBD?  
+
+O SQL é a linguagem universalmente aceita para trabalhar com bancos de dados relacionais em Sistemas de Gerenciamento de Banco de Dados (SGBD). Ele oferece ferramentas para consultar, modificar e administrar dados, assim como para definir a estrutura do banco de dados, regular o acesso aos dados, gerenciar transações e resolver conflitos de acesso em ambientes onde múltiplos usuários interagem simultaneamente. 
+
+  
+
+2) Na construção de esquemas de banco de dados, onde o desenvolvedor cria esquema (database), tabelas, atributos, restrições e outros tantos elementos. Comente as principais restrições que o desenvolvedor cria no projeto de banco de dados.	 
+
+Restrições de Integridade Referencial: Garantem que as relações entre tabelas sejam mantidas, impedindo a inserção de dados que violem a consistência dos relacionamentos, assegurando a integridade dos dados.  
+
+Restrições de Chave Primária: Impõem a unicidade e a não nulidade de uma ou mais colunas em uma tabela, garantindo que cada linha seja identificada de forma única e que não haja valores duplicados ou ausentes.  
+
+Restrições de Chave Estrangeira: Mantêm a consistência referencial entre tabelas, exigindo que os valores em uma coluna correspondam aos valores existentes em outra tabela, assegurando a integridade dos relacionamentos entre os dados.  
+
+Restrições de Verificação: Permitem definir condições específicas que os dados devem atender para serem inseridos ou atualizados, garantindo que apenas valores válidos sejam armazenados no banco de dados.  
